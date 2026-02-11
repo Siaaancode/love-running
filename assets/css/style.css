@@ -32,20 +32,31 @@ header a {
 }
 h1 {
     font-family: 'lato', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    text-transform: uppercase; /*Forces the text to be the value*/
+    letter-spacing: 2px; /*Spaces the text*/
     column-rule-color: #252525;
 }
 #menu {
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
+    font-size: 110%; /*Changes the size of the font based on default size*/
+    letter-spacing: 4px; /*Spaces the text*/
+    list-style-type: none; /*Removes the bullet points*/
 }
 #menu > li {
     margin-bottom: 1em;
 }
 .active {
     border-bottom: 1px solid #3a3a3a;
+}
+/*Navbar styles with dropdown toggle*/
+nav {
+    position: absolute; /*Takes the element out of the normal flow of the page structure*/
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    
 }
 
 /*Main*/
