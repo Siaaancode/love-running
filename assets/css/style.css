@@ -17,6 +17,12 @@ body {
     color: #3a3a3a;
     font-family: 'lato', sans-serif;
 }
+h1, h2, h3 {
+    font-family: 'lato', sans-serif;
+    text-transform: uppercase; /*Forces the text to be the value*/
+    letter-spacing: 2px; /*Spaces the text*/
+    column-rule-color: #252525;
+}
 /*Header*/
 header {
     background-color: #ffffff;
@@ -33,12 +39,7 @@ header a {
     text-decoration: none;
     color: inherit;
 }
-h1 {
-    font-family: 'lato', sans-serif;
-    text-transform: uppercase; /*Forces the text to be the value*/
-    letter-spacing: 2px; /*Spaces the text*/
-    column-rule-color: #252525;
-}
+
 #menu {
     font-size: 110%; /*Changes the size of the font based on default size*/
     letter-spacing: 4px; /*Spaces the text*/
@@ -74,10 +75,19 @@ nav {
 }
 /*Main*/
 main {
-    background-color:lightblue;
     /*Make main element take up any surplus space to push footer down*/
     flex: 1 0 auto;
     margin-top: 47px;
+}
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url(/assets/images/hero-image.webp) no-repeat center center/cover;
+}
+
+#cover-text {
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
 }
 /*Footer*/
 #social-networks {
